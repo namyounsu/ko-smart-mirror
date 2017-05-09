@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Smart Mirror Remote</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-placeHolder">
+</nav>
+
+<!-- Begin page content -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="form-group" id="command">
+                    <div class="input-group">
+                        <input type="text" id="command-box" class="input-lg form-control" placeholder="명령어 전송....">
+                        <span id="no-speak" class="input-group-addon">
+                            <i class="fa fa-microphone-slash"></i>
+                        </span>
+                        <span id="speak" class="input-group-addon">
+                            <i class="fa fa-microphone"></i>
+                        </span>
+                    </div>
+                </br>
+                <button id="command-bttn" type="button" class="btn btn-primary btn-lg btn-block glyphicons">말을 보내봐요!</button>
+            </div>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <p id="speech-error" class="alert alert-danger" style="display:none"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <p class="lead">버튼을 눌러서 음성 명령을 <code>smart mirror</code>에게 보낼 수 있어요.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                <a href="#" id="kiosk" class="btn btn-default" role="button">전체 화면</a>
+                <a href="#" id="reload" class="btn btn-default" role="button">새로고침</a>
+                <a href="#" id="sleep" class="btn btn-default" role="button">화면 검어지게</a>
+                <a href="#" id="wakeUp" class="btn btn-default" role="button">화면 밝아지게</a>
+                <a href="#" id=“commands” class="btn btn-default" role="button">도움말</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3>Configure</h3>
+            <p>톱니바퀴를 눌러서 자세한 설정을 할 수 있습니다. 자세한 정보는 <a href="https://docs.smart-mirror.io">여기에 있습니다</a>.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>개발자 전용</h3>
+            <p>자세한 정보는 여기서 보실 수 있습니다: <a href="https://docs.smart-mirror.io/docs/development_and_contributing.html">개발 및 기여도 같이요.</a></p>
+        </div>
+        <form class="col-md-6 col-md-offset-3">
+            <div class="checkbox">
+                <label><input id="devtools" type="checkbox">개발자 툴 보기</label>
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+
+    <div id="connection-bar" class="container">
+        <p id="connection-text" class="text-muted">로딩중....(안되면 거울의 상태를 확인하세요)</p>
+    </div>
+</footer>
+
+<!-- Smart Mirror remote JavaScript
+================================================== -->
+<!-- Placed at the end of the document for profit -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://use.fontawesome.com/741cbe0233.js"></script>
+
+<script src="/remote-client.js"></script>
+
+</body>
+
+</html>
+
