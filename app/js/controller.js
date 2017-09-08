@@ -65,7 +65,7 @@
 			error: function (error) {
 				console.log(error);
 				if (error.error == "network") {
-					$scope.speechError = "Google Speech Recognizer: Network Error (Speech quota exceeded?)";
+					$scope.speechError = "Google 음성 인식 : 네트워크 에러 (스피치 에러는 아닌가요?)";
 				}
 			}
 		});
@@ -103,7 +103,7 @@
 			}
 			// List commands
 			SpeechService.addCommand('list', function () {
-				console.debug("Here is a list of commands...");
+				console.debug("command list...");
 				console.log(SpeechService.commands);
 				$scope.commands.commandPage = []
 				$scope.commands.commandPage = SpeechService.getCommands();
@@ -154,7 +154,7 @@
 			SpeechService.addCommand('home', defaultView);
 
 			SpeechService.addCommand('debug', function () {
-				console.debug("Boop Boop. Showing debug info...");
+				console.debug("debug info is comming....xo");
 				$scope.debug = true;
 			});
 

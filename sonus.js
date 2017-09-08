@@ -11,7 +11,7 @@ try {
 }
 
 if (!config || !config.speech || !config.speech.keyFilename || !config.speech.hotwords || !config.general.language) {
-	throw "Configuration Error! See: https://docs.smart-mirror.io/docs/configure_the_mirror.html#speech"
+	throw "설정 에러! \nhttps://docs.smart-mirror.io/docs/configure_the_mirror.html#speech 을 참고하세요."
 }
 
 var keyFile = JSON.parse(fs.readFileSync(path.resolve(config.speech.keyFilename), "utf8"))

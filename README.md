@@ -1,29 +1,50 @@
-<h1 align="enter">Smart Mirror</h1>
+<h1 align="enter">ko-smart-mirror</h1>
 <p align="left">
 Forked By Evancohen smart-mirror 
 http://github.com/evancohen/smart-mirror
 </p>
 <p align="center">
-A voice controlled life automation hub, most commonly powered by the Raspberry Pi.
+음성인식으로 정보를 표시 할 수 있는 Node.js기반 프로그램입니다.
 </p>
 
-### [Documentation](http://docs.smart-mirror.io)
-Check out the documentation for more information:
-- [Manual installation](https://docs.smart-mirror.io/docs/installation.html)
-- [Configuration](https://docs.smart-mirror.io/docs/configuration.html) 
-- [Troubleshooting](https://docs.smart-mirror.io/docs/troubleshooting.html)
+### 설치 방법
+git clone https://github.com/NamSu/ko-smart-mirror.git
+cd \ko-smart-mirror
+npm install
 
-### Discord
-A live chat to get help and discuss mirror related issues: https://discord.gg/EMb4ynW. Usually there are a few folks hanging around in the lobby, but if there arent you are probubly better off [filing an issue](https://github.com/evancohen/smart-mirror/issues/new).
+### 디버깅 방법
+npm debug
 
-### Development and Contributing
-See the [dev](https://github.com/evancohen/smart-mirror/tree/dev) branch for features that are curently in development.
-If you would like to contribue please follow the [contribution guidelines](https://github.com/evancohen/smart-mirror/blob/master/CONTRIBUTING.md).
-To launch the mirror with a debug window attached use the following command:
-```
-npm start dev
-```
-For more information see the [Development and Contributing](http://docs.smart-mirror.io/docs/development_and_contributing.html) section of the documentation.
+### 윈도우 환경에서 설치하기 (테스트 중)
+Git + node 6.5 이상 환경에서
+
+git clone https://github.com/NamSu/ko-smart-mirror.git
+npm install node-pre-gyp
+npm install sqlite3
+npm install node-gyp
+npm install
+
+만약 실행이 안될 경우, 3가지를 먼저 설치해주세요 :)
+PWD http://www.stokebloke.com/software/index.php#pwd
+.NET Framework 2.0 SDK https://www.microsoft.com/en-us/download/details.aspx?id=19988
+VC++ 2005 Redistributable https://www.microsoft.com/en-us/download/details.aspx?id=5638
+
+###라이센스
+MIT
+
+### TODO
+annyang 문제점
+삭제한 버스 알림 API 복구
+구글 캘린더 연동 실패문제
+
+### Install
+git clone https://github.com/NamSu/ko-smart-mirror.git
+cd \ko-smart-mirror
+npm install
+
+### Debug
+
+npm debug
 
 ### Install for Windows (NOT COMPLITE)
 Installing Windows is NOT Comfortable..! >> npm instll node-pre-gyp > npm instll sqlite3 > npm install node-gyp > npm install
@@ -36,7 +57,7 @@ VC++ 2005 Redistributable https://www.microsoft.com/en-us/download/details.aspx?
 ### License
 MIT
 
-### Author
+### First Author
 [Evan Cohen](http://evanbtcohen.com/)
 
 ### More info

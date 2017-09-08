@@ -1,7 +1,7 @@
 {
-  "name": "smart-mirror",
-  "version": "0.0.13",
-  "description": "The fairest of them all",
+  "name": "ko-smart-mirror",
+  "version": "0.0.2",
+  "description": "",
   "main": "main.js",
   "scripts": {
     "install": "bower install",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evancohen/smart-mirror.git"
+    "url": "git+https://github.com/NamSu/ko-smart-mirror.git"
   },
   "keywords": [
     "Smart Mirror",
@@ -25,12 +25,12 @@
     "Voice Control",
     "DIY"
   ],
-  "author": "Evan Cohen",
+  "author": "NamSu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/evancohen/smart-mirror/issues"
+    "url": "https://github.com/NamSu/ko-smart-mirror/issues"
   },
-  "homepage": "https://github.com/evancohen/smart-mirror",
+  "homepage": "https://github.com/NamSu/ko-smart-mirror",
   "devDependencies": {
     "angular-i18n": "^1.5.5",
     "bower": "^1.7.9",
